@@ -205,32 +205,33 @@ export default function Home() {
           </p>
 
 
-          {/* CONTACT LINKS */}
-          <div className="flex flex-wrap gap-8 text-sm text-gray-500">
+         {/* CONTACT LINKS */}
+<div className="flex flex-wrap gap-8 text-sm text-gray-500">
 
-            <a
-              href="#"
-              className="transition hover:text-white"
-            >
-              INSTAGRAM eightyeighty888
-            </a>
+  <a
+    href="https://www.instagram.com/eightyeighty888/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="transition hover:text-white"
+  >
+    INSTAGRAM ↗
+  </a>
 
-            <a
-              href="#"
-              className="transition hover:text-white"
-            >
-              VIMEO
-            </a>
+  <a
+    href="#"
+    className="transition hover:text-white"
+  >
+    VIMEO
+  </a>
 
-            <a
-              href="mailto:eito.hagi28@gmail.com"
-              className="transition hover:text-white"
-            >
-              EMAIL
-            </a>
+  <a
+    href="mailto:eito.hagi28@gmail.com"
+    className="transition hover:text-white"
+  >
+    EMAIL ↗
+  </a>
 
-          </div>
-
+</div>
 
           {/* COPYRIGHT */}
           <p className="mt-20 text-xs text-gray-700">
