@@ -11,10 +11,10 @@ const works = {
     video: "/videos/street-light.mp4",
 
     description:
-      "A visual study exploring artificial light, urban atmosphere and the subtle presence of illumination.",
+      "A visual study exploring artificial light, urban atmosphere and the subtle presence of illumination and human'sounds.",
 
     concept:
-      "This work investigates how light changes the perception of space and how familiar urban objects can become abstract visual material through generative processes.",
+      "On a rainy night, artificial light does not simply illuminate the street. It meets the rain, scatters through the air, and becomes part of the atmosphere around us.This work explores the encounter between streetlights and rain through a particle-based system. Rather than simply simulating the physical behavior of light, it focuses on the subtle harmony that emerges between nature and things created by humans. Sound and light, both shaped by human intervention, respond to one another within the rain, forming an environment that exists somewhere between the artificial and the natural.",
   },
 
   "star-flower": {
@@ -26,10 +26,10 @@ const works = {
     video: "/videos/star-flower.mp4",
 
     description:
-      "A generative particle work inspired by stars, growth and organic structures.",
+      "A generative particle work inspired by stars, lens distorsion of nebla .",
 
     concept:
-      "Particles emerge, spread and gather into structures reminiscent of flowers and celestial systems. The work explores the boundary between natural growth and computational behavior.",
+      "Light is something we can observe, but never hold. It passes through space and disappears beyond our reach.What if there were a lens, like a meta-material, capable of capturing and preserving light?This work begins with that imaginary possibility. If light traveling through the universe could be held within such a material, perhaps a fragment of the cosmos itself could be kept in the palm of our hand.FLOWER OF THE STAR explores this idea of preserving light — imagining a small, contained universe formed from something that, by nature, cannot remain still.",
   },
 
   "gravity-lens": {
@@ -41,10 +41,10 @@ const works = {
     video: "/videos/gravity-lens.mp4",
 
     description:
-      "A visual experiment exploring the distortion of light through the idea of gravitational lensing.",
+      "A visual experiment exploring the distortion of metalic material through the idea of gravitational lensing.",
 
     concept:
-      "Inspired by gravitational lensing, this work treats distortion not as an error but as a visual phenomenon. Light and space are transformed to create an abstract interpretation of how gravity can bend our perception.",
+      "In the universe, massive objects distort the structure of spacetime. Light traveling through this distorted space is bent, producing the phenomenon we observe as gravitational lensing.But what if such an immense distortion could act upon something tangible?This work translates that question into a physical simulation. Instead of light, gravitational distortion is imagined as acting upon a massive metallic chain. Its structure bends and moves under forces inspired by the deformation of spacetime.By bringing a phenomenon that normally exists on an astronomical scale into an artificial material, the work explores how cosmic forces might be perceived through matter.",
   },
 };
 

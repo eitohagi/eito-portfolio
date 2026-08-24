@@ -142,28 +142,55 @@ export default function Home() {
 
 
       {/* ABOUT */}
-      <section className="grid min-h-screen gap-16 px-10 py-32 md:grid-cols-[1fr_2fr]">
+<section className="min-h-screen px-10 py-32">
 
-        <p className="text-xs tracking-[0.3em] text-gray-500">
-          ABOUT
-        </p>
+  {/* ETHOS */}
+  <div className="grid gap-16 md:grid-cols-[1fr_2fr]">
+    <p className="text-xs tracking-[0.3em] text-gray-500">
+      ETHOS
+    </p>
 
-        <div>
+    <p className="max-w-4xl text-4xl leading-tight tracking-tight md:text-6xl">
+      Bringing the intersection of cultural tradition and mathematical
+      thinking into new forms of expression for the future.
+    </p>
+  </div>
 
-          <p className="max-w-4xl text-4xl leading-tight tracking-tight md:text-6xl">
-            Exploring physical phenomena through computation,
-            generative systems and audiovisual expression.
-          </p>
 
-          <p className="mt-16 max-w-2xl text-base leading-8 text-gray-500">
-            My practice combines physics, TouchDesigner, GLSL,
-            Houdini, Blender and Python to create visual and
-            interactive experiences.
-          </p>
+  {/* SPIRIT */}
+  <div className="mt-32 grid gap-16 md:grid-cols-[1fr_2fr]">
+    <p className="text-xs tracking-[0.3em] text-gray-500">
+      SPIRIT
+    </p>
 
-        </div>
+    <p className="max-w-4xl text-4xl leading-tight tracking-tight md:text-6xl">
+      Bridging art and physics to expand the possibilities of both fields
+      through their interaction.
+    </p>
+  </div>
 
-      </section>
+
+  {/* WORKS */}
+  <div className="mt-32 grid gap-16 md:grid-cols-[1fr_2fr]">
+    <p className="text-xs tracking-[0.3em] text-gray-500">
+      WORKS
+    </p>
+
+    <div>
+      <p className="max-w-4xl text-4xl leading-tight tracking-tight md:text-6xl">
+        Creating works grounded in physical simulation, moving between
+        reality and computational worlds to explore territories of expression
+        that have yet to be defined.
+      </p>
+
+      <p className="mt-16 max-w-2xl text-base leading-8 text-gray-500">
+        My practice combines physics, TouchDesigner, GLSL, Houdini,
+        Blender and Python to create visual and interactive experiences.
+      </p>
+    </div>
+  </div>
+
+</section>
 
 
       {/* CONTACT */}
@@ -185,7 +212,7 @@ export default function Home() {
               href="#"
               className="transition hover:text-white"
             >
-              INSTAGRAM
+              INSTAGRAM eightyeighty888
             </a>
 
             <a
@@ -196,7 +223,7 @@ export default function Home() {
             </a>
 
             <a
-              href="mailto:yourmail@example.com"
+              href="mailto:eito.hagi28@gmail.com"
               className="transition hover:text-white"
             >
               EMAIL
