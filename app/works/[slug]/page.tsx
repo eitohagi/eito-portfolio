@@ -1,168 +1,111 @@
-import Link from "next/link";
-import { notFound } from "next/navigation";
+{/* ABOUT */}
+<section className="min-h-screen px-10 py-32">
 
-const works = {
-  light: {
-    number: "01",
-    title: "灯り",
-    year: "2026",
-    category: "GENERATIVE ART",
-    tools: "TouchDesigner / GLSL",
-    video: "/videos/street-light.mp4",
+  {/* PROFILE */}
+  <div className="grid gap-16 md:grid-cols-[1fr_2fr]">
 
-    description:
-      "A visual study exploring artificial light, urban atmosphere and the subtle presence of illumination and human'sounds.",
+    <p className="text-xs tracking-[0.3em] text-gray-500">
+      ABOUT
+    </p>
 
-    concept:
-      "On a rainy night, artificial light does not simply illuminate the street. It meets the rain, scatters through the air, and becomes part of the atmosphere around us.This work explores the encounter between streetlights and rain through a particle-based system. Rather than simply simulating the physical behavior of light, it focuses on the subtle harmony that emerges between nature and things created by humans. Sound and light, both shaped by human intervention, respond to one another within the rain, forming an environment that exists somewhere between the artificial and the natural.",
-  },
+    <div>
 
-  "star-flower": {
-    number: "02",
-    title: "FLOWER OF THE STAR",
-    year: "2026",
-    category: "GENERATIVE ART",
-    tools: "TouchDesigner / GPU Particles",
-    video: "/videos/star-flower.mp4",
+      <h2 className="text-4xl leading-tight tracking-tight md:text-6xl">
+        Eito Hagi / 萩 栄斗
+      </h2>
 
-    description:
-      "A generative particle work inspired by stars, lens distorsion of nebla .",
+      <p className="mt-8 max-w-2xl text-base leading-8 text-gray-500">
+        Eito Hagi is a Creative Technologist based in Tokyo, exploring
+        the intersection of physics, computation and art. His practice
+        investigates how physical phenomena, simulation and emerging
+        technologies can become new forms of visual and interactive
+        expression.
+      </p>
 
-    concept:
-      "Light is something we can observe, but never hold. It passes through space and disappears beyond our reach.What if there were a lens, like a meta-material, capable of capturing and preserving light?This work begins with that imaginary possibility. If light traveling through the universe could be held within such a material, perhaps a fragment of the cosmos itself could be kept in the palm of our hand.FLOWER OF THE STAR explores this idea of preserving light — imagining a small, contained universe formed from something that, by nature, cannot remain still.",
-  },
+    </div>
 
-  "gravity-lens": {
-    number: "03",
-    title: "DISTORT LIGHT AND GRAVITY LENSES",
-    year: "2026",
-    category: "PHYSICS / VISUAL STUDY",
-    tools: "TouchDesigner / Lens Distort",
-    video: "/videos/gravity-lens.mp4",
-
-    description:
-      "A visual experiment exploring the distortion of metalic material through the idea of gravitational lensing.",
-
-    concept:
-      "In the universe, massive objects distort the structure of spacetime. Light traveling through this distorted space is bent, producing the phenomenon we observe as gravitational lensing.But what if such an immense distortion could act upon something tangible?This work translates that question into a physical simulation. Instead of light, gravitational distortion is imagined as acting upon a massive metallic chain. Its structure bends and moves under forces inspired by the deformation of spacetime.By bringing a phenomenon that normally exists on an astronomical scale into an artificial material, the work explores how cosmic forces might be perceived through matter.",
-  },
-};
-
-type WorkSlug = keyof typeof works;
-
-export default async function WorkPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const { slug } = await params;
-
-  const work = works[slug as WorkSlug];
-
-  if (!work) {
-    notFound();
-  }
-
-  return (
-    <main className="min-h-screen bg-black text-white">
-
-      {/* BACK */}
-      <section className="px-10 pb-20 pt-10">
-        <Link
-          href="/"
-          className="text-xs tracking-[0.3em] text-gray-500 transition hover:text-white"
-        >
-          ← BACK
-        </Link>
-      </section>
+  </div>
 
 
-      {/* TITLE */}
-      <section className="px-10 pb-20">
+  {/* ETHOS */}
+  <div className="mt-32 grid gap-16 md:grid-cols-[1fr_2fr]">
 
-        <p className="mb-5 text-xs tracking-[0.3em] text-gray-500">
-          {work.number} / {work.category}
-        </p>
+    <p className="text-xs tracking-[0.3em] text-gray-500">
+      ETHOS
+    </p>
 
-        <h1 className="max-w-6xl text-6xl leading-[0.9] tracking-tight md:text-9xl">
-          {work.title}
-        </h1>
+    <p className="max-w-4xl text-4xl leading-tight tracking-tight md:text-6xl">
+      Bringing the intersection of cultural tradition and mathematical
+      thinking into new forms of expression for the future.
+    </p>
 
-      </section>
-
-
-      {/* VIDEO */}
-      <section className="w-full">
-
-        <video
-          src={work.video}
-          autoPlay
-          muted
-          loop
-          playsInline
-          controls
-          className="w-full"
-        />
-
-      </section>
+  </div>
 
 
-      {/* INFORMATION */}
-      <section className="grid gap-16 px-10 py-32 md:grid-cols-[1fr_2fr]">
+  {/* SPIRIT */}
+  <div className="mt-32 grid gap-16 md:grid-cols-[1fr_2fr]">
 
-        <div className="space-y-10 text-sm">
+    <p className="text-xs tracking-[0.3em] text-gray-500">
+      SPIRIT
+    </p>
 
-          <div>
-            <p className="mb-2 text-gray-600">
-              YEAR
-            </p>
+    <p className="max-w-4xl text-4xl leading-tight tracking-tight md:text-6xl">
+      Bridging art and physics to expand the possibilities of both fields
+      through their interaction.
+    </p>
 
-            <p>
-              {work.year}
-            </p>
-          </div>
-
-
-          <div>
-            <p className="mb-2 text-gray-600">
-              TOOLS
-            </p>
-
-            <p>
-              {work.tools}
-            </p>
-          </div>
-
-        </div>
+  </div>
 
 
-        <div>
+  {/* PRACTICE */}
+  <div className="mt-32 grid gap-16 md:grid-cols-[1fr_2fr]">
 
-          <p className="max-w-4xl text-3xl leading-tight tracking-tight md:text-5xl">
-            {work.description}
-          </p>
+    <p className="text-xs tracking-[0.3em] text-gray-500">
+      PRACTICE
+    </p>
 
-          <p className="mt-12 max-w-2xl text-base leading-8 text-gray-500">
-            {work.concept}
-          </p>
+    <div>
 
-        </div>
+      <p className="max-w-4xl text-4xl leading-tight tracking-tight md:text-6xl">
+        Creating works grounded in physical simulation, moving between
+        reality and computational worlds to explore territories of expression
+        that have yet to be defined.
+      </p>
 
-      </section>
+      <p className="mt-16 max-w-2xl text-base leading-8 text-gray-500">
+        My practice combines physics, physical simulation, creative coding
+        and generative systems with tools including TouchDesigner, GLSL,
+        Houdini, Blender and Python to create visual and interactive
+        experiences.
+      </p>
+
+    </div>
+
+  </div>
 
 
-      {/* NEXT AREA */}
-      <section className="border-t border-white/20 px-10 py-24">
+  {/* FIELDS */}
+  <div className="mt-32 border-t border-white/20 pt-10">
 
-        <Link
-          href="/"
-          className="text-sm tracking-[0.2em] text-gray-500 transition hover:text-white"
-        >
-          VIEW ALL WORKS →
-        </Link>
+    <p className="mb-10 text-xs tracking-[0.3em] text-gray-500">
+      FIELDS
+    </p>
 
-      </section>
+    <div className="flex max-w-4xl flex-wrap gap-x-8 gap-y-4 text-sm text-gray-400">
 
-    </main>
-  );
-}
+      <span>PHYSICS</span>
+      <span>PHYSICAL SIMULATION</span>
+      <span>GENERATIVE ART</span>
+      <span>CREATIVE CODING</span>
+      <span>INTERACTIVE MEDIA</span>
+      <span>TOUCHDESIGNER</span>
+      <span>GLSL</span>
+      <span>HOUDINI</span>
+      <span>BLENDER</span>
+      <span>PYTHON</span>
+
+    </div>
+
+  </div>
+
+</section>
