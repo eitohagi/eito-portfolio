@@ -25,8 +25,44 @@ const works = [
 ];
 
 export default function Home() {
+  const personJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://eitohagi.vercel.app/#person",
+    name: "Eito Hagi",
+    alternateName: "萩 栄斗",
+    url: "https://eitohagi.vercel.app/",
+    jobTitle: "Creative Technologist",
+    description:
+      "Eito Hagi (萩 栄斗) is a Creative Technologist exploring the intersection of physics, computation, physical simulation, generative art, and interactive media.",
+    knowsAbout: [
+      "Physics",
+      "Physical Simulation",
+      "Creative Technology",
+      "Creative Coding",
+      "Generative Art",
+      "Interactive Media",
+      "TouchDesigner",
+      "GLSL",
+      "Houdini",
+      "Blender",
+      "Python",
+    ],
+    sameAs: [
+      "https://www.instagram.com/eightyeighty888/",
+    ],
+  };
+
   return (
-    <main className="bg-black text-white">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(personJsonLd),
+        }}
+      />
+
+      <main className="bg-black text-white">
 
       {/* HERO */}
       <section className="relative flex min-h-screen flex-col justify-center px-10">
@@ -144,6 +180,26 @@ export default function Home() {
       {/* ABOUT */}
 <section className="min-h-screen px-10 py-32">
 
+  {/* PROFILE */}
+  <div className="mb-32 grid gap-16 md:grid-cols-[1fr_2fr]">
+    <p className="text-xs tracking-[0.3em] text-gray-500">
+      ABOUT
+    </p>
+
+    <div>
+      <h2 className="text-4xl leading-tight tracking-tight md:text-6xl">
+        Eito Hagi / 萩 栄斗
+      </h2>
+
+      <p className="mt-8 max-w-2xl text-base leading-8 text-gray-500">
+        Eito Hagi is a Creative Technologist exploring the intersection
+        of physics, computation, physical simulation and digital art.
+        His practice transforms physical phenomena and computational
+        systems into generative and interactive forms of expression.
+      </p>
+    </div>
+  </div>
+
   {/* ETHOS */}
   <div className="grid gap-16 md:grid-cols-[1fr_2fr]">
     <p className="text-xs tracking-[0.3em] text-gray-500">
@@ -240,8 +296,9 @@ export default function Home() {
 
         </div>
 
-      </footer>
+            </footer>
 
     </main>
+    </>
   );
 }
