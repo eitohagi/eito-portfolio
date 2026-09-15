@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://eito-portfolio-six.vercel.app"),
+  metadataBase: new URL("https://eitohagi.vercel.app"),
   title: {
     default: "Eito Hagi | Creative Technologist",
     template: "%s | Eito Hagi",

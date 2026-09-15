@@ -1,8 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://eito-portfolio-six.vercel.app";
-
+  const baseUrl = "https://eitohagi.vercel.app";
   return {
     rules: {
       userAgent: "*",
